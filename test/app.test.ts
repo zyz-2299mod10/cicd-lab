@@ -37,7 +37,7 @@ describe('Fastify app', () => {
     expect(response.statusCode).toBe(200);
     expect(response.json()).toMatchObject({
       message: 'CI/CD Lab Fastify app is running',
-      version: '9.9.9'
+      version: '1.2.3'
     });
 
     await app.close();
