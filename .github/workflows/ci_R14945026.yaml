@@ -28,7 +28,7 @@ jobs:
       - name: TypeScript typecheck
         run: npm run typecheck
 
-      - name: Prettier check (assignment scope)
+      - name: Prettier check 
         run: |
           npx prettier --check \
             "src/**/*.ts" \
