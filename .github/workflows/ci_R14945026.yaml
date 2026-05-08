@@ -3,7 +3,7 @@ name: CI R14945026
 on:
   push:
     branches:
-      - "**"
+      - '**'
 
 permissions:
   contents: read
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: '22'
           cache: npm
 
       - name: Install dependencies
@@ -28,7 +28,7 @@ jobs:
       - name: TypeScript typecheck
         run: npm run typecheck
 
-      - name: Prettier check 
+      - name: Prettier check
         run: |
           npx prettier --check \
             "src/**/*.ts" \
